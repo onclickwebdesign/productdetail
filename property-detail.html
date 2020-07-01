@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>234 Evergreen Terrace, San Francisco, CA - XYZ Realty Inc.</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="css/property-styles.css" type="text/css" rel="Stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="flex container">
+        <a id="logo" href="#">XYZ Realty</a>
+        <nav>
+          <button id="nav-toggle" class="hamburger-menu">
+            <span class="strip"></span>
+            <span class="strip"></span>
+            <span class="strip"></span>
+          </button>
+
+          <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Properties</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="close-flyout"><span class="fas fa-times"></span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main-property">
+      <div id="property-details" class="flex container">
+        <div class="address-container flex">
+          <div class="home-icon">
+            <span class="fa fa-home"></span>
+          </div>
+          <div>
+            <address>
+              <strong>234 Evergreen Terrace</strong>
+              <small>San Francisco, CA 23321</small>
+            </address>
+            <small class="status"><span class="for-sale"></span> For Sale</small>
+          </div>
+          <small class="year-built-sm">Built: 1999 - Listed On XYZ Realty: 9 days</small>
+        </div>
+
+        <div class="property-stats-container flex">
+          <div class="price">
+            <div class="padded-inner-container">
+              <strong>$1,230,000</strong>
+              <small>Listed at Price</small>
+            </div>
+          </div>
+          <div class="beds">
+            <div class="padded-inner-container">
+              <strong>3</strong>
+              <small>Beds</small>
+            </div>
+          </div>
+          <div class="baths">
+            <div class="padded-inner-container">
+              <strong>2</strong>
+              <small>Baths</small>
+            </div>
+          </div>
+          <div class="sqft">
+            <div class="padded-inner-container">
+              <strong>2,600 <small>Sq. Ft.</small></strong>
+              <small>$473 / Sq. Ft.</small>
+            </div>
+          </div>
+          <small class="year-built">Built: 1999 - Listed On XYZ Realty: 9 days</small>
+        </div>
+
+        <div class="actions-container flex">
+          <div class="favorite">
+            <button><span class="fa fa-heart"></span></button>
+            <small>Favorite</small>
+          </div>
+          <div class="share">
+            <button><span class="fa fa-share"></span></button>
+            <small>Share</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start: image slider -->
+      <div id="property-image-slider" class="slick">
+        <div>
+          <img src="images/property-img-1.jpg" alt="Property Image 1" />
+        </div>
+        <div>
+          <img src="images/property-img-2.jpg" alt="Property Image 2" />
+        </div>
+        <div>
+          <img src="images/property-img-3.jpg" alt="Property Image 3" />
+        </div>
+        <div>
+          <img src="images/property-img-4.jpg" alt="Property Image 4" />
+        </div>
+        <div>
+          <img src="images/property-img-5.jpg" alt="Property Image 5" />
+        </div>
+        <div>
+          <img src="images/property-img-6.jpg" alt="Property Image 6" />
+        </div>
+        <div>
+          <img src="images/property-img-7.jpg" alt="Property Image 7" />
+        </div>
+        <div>
+          <img src="images/property-img-8.jpg" alt="Property Image 8" />
+        </div>
+        <div>
+          <img src="images/property-img-9.jpg" alt="Property Image 9" />
+        </div>
+      </div>
+      <!-- End: image slider -->
+
+      <!-- Start: map -->
+      <div id="map"></div>
+      <!-- End: map -->
+
+      <!-- Start: street view -->
+      <div id="street"></div>
+      <!-- End: street view -->
+
+      <div class="slider-options-container flex">
+        <a id="image-view" href="javascript:;">
+          <div class="image-fade"><span>Images</span></div>
+          <img src="images/image-view.jpg" alt="Show Images" />
+        </a>
+
+        <a id="map-view" href="javascript:;">
+          <div class="image-fade"><span>Map</span></div>
+          <img src="images/map-view.jpg" alt="Show Map View" />
+        </a>
+
+        <a id="street-view" href="javascript:;">
+          <div class="image-fade"><span>Street View</span></div>
+          <img src="images/street-view.jpg" alt="Show Street View" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <section id="property-description">
+    <div class="flex container">
+      <div class="description">
+        <h3>Overview</h3>
+        <p>
+          VERY RARE, HIDDEN GEM IN THE HEART OF THE CITY.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit, obcaecati temporibus assumenda at,
+          magni dolorum, culpa quasi voluptas tempore autem praesentium repellat enim a repellendus earum ab nam nihil.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit, obcaecati temporibus assumenda at,
+          magni dolorum, culpa quasi voluptas tempore autem praesentium repellat enim a repellendus earum ab nam nihil.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit, obcaecati temporibus assumenda at,
+          magni dolorum, culpa quasi voluptas tempore autem praesentium repellat enim a repellendus earum ab nam nihil.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit, obcaecati temporibus assumenda at,
+          magni dolorum, culpa quasi voluptas tempore autem praesentium repellat enim a repellendus earum ab nam nihil.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit, obcaecati temporibus assumenda at,
+          magni dolorum, culpa quasi voluptas tempore autem praesentium repellat enim a repellendus earum ab nam nihil.
+        </p>
+      </div>
+
+      <div class="listed-by-container">
+        <h3>Listed By</h3>
+        <img src="images/listing-agent.jpg" alt="Listing Agent Stuart Redman" />
+        <div>
+          <a href="#">Stuart Redman</a> - XYZ Realty Inc.
+          <small>Real Estate Agent</small>
+        </div>
+        <button class="primary-button">Ask a Question</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="property-info" class="container">
+    <div class="price-insights">
+      <h3>Price Insights</h3>
+      <div class="flex">
+        <div>
+          <label>Est. Mo. Payment</label>
+          <strong>$5,585</strong>
+        </div>
+
+        <div>
+          <label>Price/Sq.Ft.</label>
+          <strong>$473</strong>
+        </div>
+
+        <div>
+          <label>Buyer's Brokerage Comp</label>
+          <strong>2.5%</strong>
+        </div>
+
+        <div>
+          <label>Seller's Brokerage Comp</label>
+          <strong>2.5%</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-facts">
+      <h3>Home Facts</h3>
+      <div class="flex">
+        <div>
+          <label>Status</label>
+          <strong>For Sale</strong>
+        </div>
+
+        <div>
+          <label>Time on XYZ Realty</label>
+          <strong>9 days</strong>
+        </div>
+
+        <div>
+          <label>HOA Dues</label>
+          <strong>$375/month</strong>
+        </div>
+
+        <div>
+          <label>Year Built</label>
+          <strong>1999</strong>
+        </div>
+
+        <div>
+          <label>Community</label>
+          <strong>San Francisco</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="embedded-map">
+    <div id="google-maps"></div>
+  </section>
+
+  <section id="nearby-similar-homes">
+    <div class="container">
+      <h2>Nearby Similar Homes</h2>
+      <div id="properties-slider" class="slick">
+        <a href="#">
+          <img src="images/nearby-property-1.jpg" alt="Near By Property 1" />
+          <div class="property-details">
+            <p class="price">$3,400,000</p>
+            <span class="beds">6 beds</span>
+            <span class="baths">4 baths</span>
+            <span class="sqft">4,250 sqft.</span>
+            <address>
+              480 12th, Unit 14, San Francisco, CA
+            </address>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="images/nearby-property-2.jpg" alt="Near By Property 2" />
+          <div class="property-details">
+            <p class="price">$3,400,000</p>
+            <span class="beds">6 beds</span>
+            <span class="baths">4 baths</span>
+            <span class="sqft">4,250 sqft.</span>
+            <address>
+              480 12th, Unit 14, San Francisco, CA
+            </address>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="images/nearby-property-3.jpg" alt="Near By Property 3" />
+          <div class="property-details">
+            <p class="price">$3,400,000</p>
+            <span class="beds">6 beds</span>
+            <span class="baths">4 baths</span>
+            <span class="sqft">4,250 sqft.</span>
+            <address>
+              480 12th, Unit 14, San Francisco, CA
+            </address>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="images/nearby-property-4.jpg" alt="Near By Property 4" />
+          <div class="property-details">
+            <p class="price">$3,400,000</p>
+            <span class="beds">6 beds</span>
+            <span class="baths">4 baths</span>
+            <span class="sqft">4,250 sqft.</span>
+            <address>
+              480 12th, Unit 14, San Francisco, CA
+            </address>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="images/nearby-property-2.jpg" alt="Near By Property 5" />
+          <div class="property-details">
+            <p class="price">$3,400,000</p>
+            <span class="beds">6 beds</span>
+            <span class="baths">4 baths</span>
+            <span class="sqft">4,250 sqft.</span>
+            <address>
+              480 12th, Unit 14, San Francisco, CA
+            </address>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="property-info-details">
+    <div class="container">
+      <h2>Property Details for 234 Evergreen Terrace</h2>
+
+      <div class="flex main-details">
+        <div>
+          <label><span class="fa fa-home"></span> Type:</label>
+          <span>Single Family</span>
+        </div>
+        <div>
+          <label><span class="fa fa-car"></span> Parking:</label>
+          <span>2 spaces</span>
+        </div>
+        <div>
+          <label><span class="fa fa-thermometer-full"></span> Heating:</label>
+          <span>Forced air</span>
+        </div>
+        <div>
+          <label><span class="fa fa-square-o"></span> Lot Size:</label>
+          <span>4,200 sq.ft.</span>
+        </div>
+        <div>
+          <label><span class="fa fa-thermometer-empty"></span> Cooling:</label>
+          <span>Central Air</span>
+        </div>
+      </div>
+
+      <h3>Interior details</h3>
+      <div class="flex">
+        <div>
+          <strong>Bedrooms and bathrooms</strong>
+          <ul>
+            <li>Bedrooms: 3</li>
+            <li>Full bathrooms: 2</li>
+            <li>1/2 bathrooms: 1</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Appliances</strong>
+          <ul>
+            <li>Appliances included: Dryer, Washer, Refrigerator, Freezer, Garbage disposal, Microwave, Range/Oven,
+              Dishwasher</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Basement</strong>
+          <ul>
+            <li>None</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Flooring</strong>
+          <ul>
+            <li>Flooring: Hardwood, Laminate, Carpet</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Other interior features</strong>
+          <ul>
+            <li>Fireplace</li>
+            <li>Bonus room</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Exterior details</h3>
+      <div class="flex">
+        <div>
+          <strong>Parking</strong>
+          <ul>
+            <li>Attached Garage</li>
+            <li>Garage spaces: 2</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Lot</strong>
+          <ul>
+            <li>Lot size: 4,200 sq.ft.</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Property</strong>
+          <ul>
+            <li>Stories: 2</li>
+            <li>Exterior features: Stone, Wood</li>
+            <li>Fencing: Fenced yard</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Construction details</h3>
+      <div class="flex">
+        <div>
+          <strong>Type and style</strong>
+          <ul>
+            <li>Single Family</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Condition</strong>
+          <ul>
+            <li>New construction: no</li>
+            <li>Year built: 1999</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="price-history">
+    <div class="container">
+      <h3>Price History</h3>
+
+      <div class="price-history-container">
+        <div class="flex header-row">
+          <span>DATE</span>
+          <span>EVENT</span>
+          <span>PRICE</span>
+        </div>
+
+        <div class="flex">
+          <span>6/26/2020</span>
+          <span>Price change</span>
+          <span>$1,230,000 <i class="price-change decrease">(-3.6%)</i></span>
+        </div>
+
+        <div class="flex">
+          <span>6/19/2020</span>
+          <span>Listed for sale</span>
+          <span>$1,275,000 <i class="price-change increase">(+28.6%)</i></span>
+        </div>
+
+        <div class="flex">
+          <span>4/11/2015</span>
+          <span>Sold</span>
+          <span>$910,000</span>
+        </div>
+
+        <div class="flex">
+          <span>1/29/2015</span>
+          <span>Price change</span>
+          <span>$910,000 <i class="price-change decrease">(-4.2%)</i></span>
+        </div>
+
+        <div class="flex">
+          <span>11/19/2014</span>
+          <span>Listed for sale</span>
+          <span>$950,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="neighborhood">
+    <div class="container">
+      <h2>Neighborhood</h2>
+
+      <div class="walk-score-container">
+        <div>
+          <span class="fa fa-walking"></span>
+          <strong>Walk Score:</strong> <a href="#">10</a>/100 <i>(Car-Dependent)</i>
+        </div>
+        <div>
+          <span class="fa fa-bus"></span>
+          <strong>Transit Score:</strong> <a href="#">9</a>/100 <i>(Minimal Transit)</i>
+        </div>
+      </div>
+
+      <h3>School ratings</h3>
+
+      <div class="school-ratings-container">
+        <div>
+          <div class="rating good"><span>8</span>/10</div>
+          <div class="school-info">
+            <div><a href="#">ABC's Elementary</a></div>
+            <span>Grades: <strong>PK-6</strong></span>
+            <span>Distance: <strong>0.4 mi</strong></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="rating medium"><span>6</span>/10</div>
+          <div class="school-info">
+            <div><a href="#">Acme Junior High School</a></div>
+            <span>Grades: <strong>7-9</strong></span>
+            <span>Distance: <strong>0.5 mi</strong></span>
+          </div>
+        </div>
+
+        <div>
+          <div class="rating good"><span>9</span>/10</div>
+          <div class="school-info">
+            <div><a href="#">Pi Squared Highschool</a></div>
+            <span>Grades: <strong>10-12</strong></span>
+            <span>Distance: <strong>2.4 mi</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div id="form-container">
+        <h3>Contact the Listing Agent</h3>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" />
+
+          <label for="message">Message</label>
+          <textarea id="message">I'm interested in purchasing 234 Evergreen Terrace in San Francisco, CA...</textarea>
+
+          <button class="rounded">Contact Agent</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="flex container">
+      <div class="footer-about">
+        <h5>About XYZ Realty Inc.</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem.
+          Amet aliquid nesciunt veritatis aliquam.</p>
+      </div>
+
+      <div class="footer-quick-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        <h5>Subscribe to our Newsletter</h5>
+        <div id="subscribe-container">
+          <input type="text" placeholder="Enter Email" />
+          <button class="right-rounded">Send</button>
+        </div>
+
+        <h5 class="follow-us">Follow Us</h5>
+        <ul>
+          <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+          <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <small>
+      Copyright &copy; 2020 All rights reserved | XYZ Realty Inc.
+    </small>
+  </footer>
+
+  <script>
+    $(function () {
+      // save references to often used DOM elements
+      const imageSlider = $('#property-image-slider');
+      const map = $('#map');
+      const street = $('#street');
+
+
+      $('#image-view').on('click', () => {
+        map.hide();
+        street.hide();
+        imageSlider.show();
+      });
+
+      $('#map-view').on('click', () => {
+        imageSlider.hide();
+        street.hide();
+        map.show();
+      });
+
+      $('#street-view').on('click', () => {
+        initStreetView();
+        map.hide();
+        imageSlider.hide();
+        street.show();
+      });
+
+      $('#property-image-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        infinite: true,
+        prevArrow: '<a href="#" class="slick-arrow slick-prev"><span class="fa fa-chevron-left"></span></a>',
+        nextArrow: '<a href="#" class="slick-arrow slick-next"><span class="fa fa-chevron-right"></span></a>',
+      });
+
+      $('#properties-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+        nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+        responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 530,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          }
+        ]
+      });
+
+      let navMenu = $('#nav-menu');
+      $('#nav-toggle').on('click', () => {
+        navMenu.css('right', '0');
+      });
+
+      $('#close-flyout').on('click', () => {
+        navMenu.css('right', '-100%');
+      });
+
+      $(document).on('click', (e) => {
+        let target = $(e.target);
+        if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+          navMenu.css('right', '-100%');
+        }
+      });
+    });
+
+    // Initialize and add the map
+    function initMap() {
+      // The location to load the map at
+      const sanFrancisco = { lat: 37.7575, lng: -122.4377 };
+      // The map, centered at San Francisco
+      const map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 12, center: sanFrancisco });
+      // The marker, positioned at San Francisco
+      const marker = new google.maps.Marker({ position: sanFrancisco, map: map });
+    }
+
+    // Initialize and add street view map
+    function initStreetView() {
+      // The location to load the street view at
+      const sanFrancisco = { lat: 37.7575, lng: -122.4377 };
+      const panorama = new google.maps.StreetViewPanorama(
+        document.getElementById('street'), {
+        position: sanFrancisco,
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<**your API key**>&callback=initMap"></script>
+</body>
+
+</html>

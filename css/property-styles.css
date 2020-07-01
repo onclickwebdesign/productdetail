@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+/* start: global styles */
+
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.7;
+}
+
+* {
+  outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+  transition: 0.4s;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #00aeef;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+button.rounded {
+  background: #00aeef;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+p.large-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+h3 {
+  border-bottom: 1px solid #999;
+  margin-bottom: 1rem;
+}
+
+/* end: global styles */
+
+/* start: header styles */
+
+main {
+  padding-top: 72px;
+}
+
+header {
+  padding: 0.5rem;
+  background: #fff;
+  box-shadow: 0 -4px 10px 1px #999;
+  height: 72px;
+  box-sizing: border-box;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul li a:hover, header ul li a.active {
+  color: #00aeef;
+}
+
+#logo {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+#close-flyout {
+  display: none;
+}
+
+/* end: header styles */
+
+/* start: main property styles */
+
+#property-details {
+  padding: 1.75rem 20px 0.5rem;
+}
+
+#property-details strong {
+  font-size: 1.2rem;
+  display: block;
+  line-height: 1;
+}
+
+#property-details small {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+#property-details .home-icon {
+  margin-right: 5px;
+  font-size: 40px;
+  color: #00aeef;
+}
+
+#property-details .home-icon .fa {
+  position: relative;
+  bottom: 10px;
+}
+
+#property-details .address-container {
+  flex: 0 0 35%;
+  justify-content: flex-start;
+}
+
+#property-details .address-container .year-built-sm {
+  display: none;
+}
+
+#property-details address {
+  font-style: normal;
+  line-height: 1.1;
+}
+
+#property-details .status .for-sale {
+  display: inline-block;
+  background: green;
+  border-radius: 20px;
+  width: 15px;
+  height: 15px;
+  margin-right: 1px;
+  position: relative;
+  top: 3px;
+}
+
+#property-details .property-stats-container {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#property-details .property-stats-container .year-built {
+  flex: 0 0 100%;
+  margin-left: 10px;
+}
+
+#property-details .property-stats-container .padded-inner-container {
+  border-left: 1px solid #444;
+  padding: 0 0.5rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+#property-details .property-stats-container .price .padded-inner-container {
+  border-left: none;
+}
+
+.actions-container {
+  justify-content: flex-start;
+}
+
+.actions-container>div {
+  text-align: center;
+}
+
+.actions-container button {
+  background: transparent;
+  border: 1px solid #999;
+  display: block;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+}
+
+.actions-container .share button {
+  border-left: none;
+}
+
+.actions-container button:hover {
+  background: #ddd;
+}
+
+/* end: main property styles */
+
+/* start: images slider styles */
+
+#property-image-slider .slick-slide {
+  margin: 0 3px;
+}
+
+#property-image-slider .slick-slide img {
+  height: 450px;
+  opacity: 0.75;
+  filter: blur(2px);
+}
+
+#property-image-slider .slick-slide.slick-center img {
+  opacity: 1;
+  filter: blur(0);
+}
+
+#property-image-slider .slick-prev, #property-image-slider .slick-next {
+  display: block;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px 7px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  font-size: 30px;
+  color: #00aeef;
+  z-index: 2;
+}
+
+#property-image-slider .slick-next {
+  right: 0;
+}
+
+.slider-options-container {
+  margin-top: 3px;
+}
+
+.slider-options-container>a {
+  flex: 0 0 33%;
+  position: relative;
+}
+
+.slider-options-container img {
+  width: 100%;
+  display: block;
+}
+
+.slider-options-container .image-fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-options-container .image-fade:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.slider-options-container .image-fade span {
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 1.4rem;
+}
+
+/* end: images slider styles */
+
+/* start: map/street view styles */
+
+#map, #street {
+  display: none;
+  height: 450px;
+  width: 100%;
+}
+
+/* end: map/street view styles */
+
+/* start: property description styles */
+
+#property-description .description {
+  flex: 0 0 75%;
+}
+
+#property-description .listed-by-container {
+  flex: 0 0 22%;
+}
+
+.listed-by-container img {
+  width: 100%;
+}
+
+.listed-by-container a {
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.listed-by-container small {
+  color: #777;
+  display: block;
+  line-height: 1;
+}
+
+.listed-by-container button {
+  background: #00aeef;
+  border: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 1.5rem;
+}
+
+/* end: property description styles */
+
+/* start: property info styles */
+
+.price-insights {
+  margin-bottom: 2rem;
+}
+
+#property-info .flex {
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+#property-info .flex>div {
+  flex: 0 1 25%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3.5rem 2.5rem 0;
+}
+
+/* end: property info styles */
+
+/* start: nearby similar homes styles */
+
+#nearby-similar-homes {
+  margin: 4rem 0 6rem;
+  position: relative;
+}
+
+#nearby-similar-homes .container {
+  position: relative;
+}
+
+#nearby-similar-homes .container:before {
+  content: "/";
+  position: absolute;
+  right: 80px;
+  top: 18px;
+  color: #999;
+}
+
+#properties-slider a {
+  text-decoration: none;
+}
+
+#properties-slider a.slick-arrow {
+  color: #000;
+  position: absolute;
+  top: -78px;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#properties-slider a.slick-prev {
+  right: 80px;
+}
+
+#properties-slider .slick-slide {
+  padding: 0 15px;
+}
+
+#properties-slider img {
+  width: 100%;
+  display: block;
+}
+
+#properties-slider .property-details {
+  padding: 1rem;
+}
+
+#properties-slider .price {
+  font-size: 1.2rem;
+  color: #343a40;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+#properties-slider .property-details span {
+  font-size: 0.8rem;
+  color: #444;
+  padding-right: 15px;
+}
+
+#properties-slider .property-details span.baths {
+  padding-left: 10px;
+}
+
+#properties-slider .property-details span.sqft {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+#properties-slider .property-details span.beds, #properties-slider .property-details span.baths {
+  border-right: 1px solid #888;
+}
+
+#properties-slider .property-details address {
+  font-size: 0.8rem;
+  font-style: normal;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+#properties button.rounded {
+  display: block;
+  margin: 2rem auto 0;
+  width: 350px;
+}
+
+/* end: nearby similar homes styles */
+
+/* start: property details styles */
+
+#property-info-details .flex {
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#property-info-details .flex.main-details {
+  width: 60%;
+  justify-content: space-between;
+}
+
+#property-info-details .flex>div {
+  flex: 0 0 30%;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+
+#property-info-details .flex.main-details>div {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#property-info-details .flex label {
+  font-weight: 600;
+}
+
+#property-info-details .flex label .fa {
+  color: #00aeef;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+  font-size: 1.6rem;
+  width: 30px;
+  text-align: center;
+}
+
+/* end: property details styles */
+
+/* start: price history styles */
+
+.price-history-container {
+  border: 1px solid #ccc;
+}
+
+.price-history-container .flex {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+}
+
+.price-history-container .flex.header-row {
+  background: rgb(242, 250, 255);
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.price-history-container .flex>span {
+  flex: 0 0 25%;
+}
+
+.price-history-container .price-change {
+  font-size: 0.85rem;
+}
+
+.price-history-container .increase {
+  color: darkgreen;
+}
+
+.price-history-container .decrease {
+  color: darkred;
+}
+
+/* end: price history styles */
+
+/* start: neighborhood */
+
+.walk-score-container {
+  margin-bottom: 4rem;
+}
+
+.walk-score-container>div {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.walk-score-container .fa {
+  font-size: 1.6rem;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  width: 30px;
+  text-align: center;
+}
+
+.walk-score-container strong {
+  margin-right: 5px;
+  flex: 0 0 130px;
+}
+
+.walk-score-container a {
+  font-size: 1.3rem;
+  color: #00aeef;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.walk-score-container a:hover {
+  text-decoration: underline;
+}
+
+.walk-score-container i {
+  margin-left: 5px;
+}
+
+.school-ratings-container>div {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.school-ratings-container .rating {
+  flex: 0 0 40px;
+  border-radius: 40px;
+  padding: 15px;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.school-ratings-container .rating.good {
+  background: darkgreen;
+}
+
+.school-ratings-container .rating.medium {
+  background: darkorange;
+}
+
+.school-ratings-container .rating.poor {
+  background: darkred;
+}
+
+.school-ratings-container .rating span {
+  font-size: 1.4rem;
+}
+
+.school-ratings-container .school-info a {
+  color: #00aeef;
+  font-weight: 600;
+}
+
+.school-ratings-container .school-info span {
+  margin-right: 10px;
+}
+
+/* end: neighborhood */
+
+/* start: contact styles */
+
+#contact {
+  margin-bottom: 0;
+  background: #f8f9fa;
+  padding: 4rem 0 8rem;
+}
+
+#form-container {
+  flex: 0 0 65%;
+  margin-right: 1rem;
+  background: #fff;
+  padding: 3rem;
+  box-sizing: border-box;
+  height: 0%;
+}
+
+#form-container h3 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+
+#form-container label {
+  display: block;
+  color: #000;
+  margin-top: 1rem;
+}
+
+#form-container input, #form-container textarea {
+  display: block;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  box-sizing: border-box;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+  color: #495057;
+}
+
+#form-container textarea {
+  height: 170px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+#listing-agent img {
+  width: 100%;
+}
+
+/* end: contact us styles */
+
+/* start: footer styles */
+
+footer {
+  background: #333;
+  padding: 8rem 0;
+  color: #777;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #777;
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+footer h5.follow-us {
+  margin-top: 1rem;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+
+footer .footer-about p {
+  width: 65%;
+}
+
+footer .footer-quick-links {
+  width: 16%;
+}
+
+footer .footer-quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-quick-links ul li {
+  margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+  color: #fff;
+}
+
+footer .footer-subscribe {
+  width: 35%;
+}
+
+#subscribe-container {
+  position: relative;
+}
+
+footer .footer-subscribe input {
+  border-radius: 30px;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  border: 1px solid #6c757d;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+footer button.right-rounded {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #00aeef;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 30px 9px;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+footer button.right-rounded:hover {
+  background: #fff;
+}
+
+footer .footer-subscribe ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-subscribe ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+  margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+  color: #fff;
+}
+
+footer small {
+  margin-top: 3rem;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+}
+
+footer small a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer small a:hover {
+  color: #fff;
+}
+
+/* end: footer styles */
+
+/* start: media queries */
+
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+  }
+  #nav-toggle {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+  #close-flyout {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+  nav ul li a.active, nav ul li a:hover {
+    color: #00aeef;
+  }
+  #property-details small {
+    font-size: 0.75rem;
+  }
+  .actions-container button {
+    padding: 0.5rem 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .container {
+    max-width: 540px;
+  }
+  #property-details {
+    flex-wrap: wrap;
+  }
+  #property-details .address-container, #property-details .property-stats-container {
+    flex: 0 0 50%;
+  }
+  #property-details .property-stats-container {
+    justify-content: flex-end;
+  }
+  #property-details .property-stats-container .padded-inner-container {
+    padding: 0 0.35rem;
+  }
+  #property-details .property-stats-container strong {
+    font-size: 1rem;
+  }
+  #property-details .property-stats-container .year-built {
+    margin-left: 0;
+    flex-basis: auto;
+  }
+  #property-details .actions-container {
+    justify-content: center;
+    flex: 0 0 100%;
+    margin-top: 0.5rem;
+  }
+  #property-image-slider .slick-prev, #property-image-slider .slick-next {
+    display: none !important;
+  }
+  .slider-options-container .image-fade span {
+    font-size: 1rem;
+  }
+  #property-description .listed-by-container>div {
+    font-size: 0.9rem;
+  }
+  #property-description .listed-by-container button {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  #nearby-similar-homes .container:before {
+    top: 2px;
+    font-size: 0.85rem;
+  }
+  #properties-slider a.slick-arrow {
+    font-size: 0.85rem;
+  }
+  #property-info-details .flex.main-details {
+    width: 100%;
+  }
+  #property-info-details .flex.main-details>div {
+    flex-basis: 100%;
+  }
+  #property-info .flex>div, #property-info-details .flex>div {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  #contact .flex {
+    flex-wrap: wrap;
+  }
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+  footer {
+    padding: 6rem 0;
+  }
+  footer .flex {
+    flex-wrap: wrap;
+  }
+  footer .flex>div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  footer .flex>div:first-child {
+    margin-top: 0;
+  }
+  footer .footer-about p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  footer .footer-subscribe input {
+    width: 90%;
+  }
+  footer h5.follow-us {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #property-details .address-container {
+    flex: 0 0 65%;
+    flex-wrap: wrap;
+  }
+  #property-details .property-stats-container {
+    flex: 0 0 35%;
+  }
+  #property-details strong {
+    font-size: 1rem;
+  }
+  #property-details .property-stats-container .padded-inner-container {
+    text-align: right;
+  }
+  #property-details .property-stats-container .price, #property-details .property-stats-container .sqft {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+  #property-details .property-stats-container .beds {
+    margin-bottom: 10px;
+  }
+  #property-details .property-stats-container .beds .padded-inner-container, #property-details .property-stats-container .sqft .padded-inner-container {
+    border: none;
+  }
+  #property-details .property-stats-container .year-built {
+    display: none;
+  }
+  #property-details .address-container .year-built-sm {
+    flex: 0 0 100%;
+    display: block;
+  }
+  .slider-options-container .image-fade span {
+    bottom: 0.25rem;
+    font-size: 0.85rem;
+  }
+  #property-description .flex {
+    flex-wrap: wrap;
+  }
+  #property-description .description, #property-description .listed-by-container {
+    flex-basis: 100%;
+  }
+  #property-description .listed-by-container>div, #property-description .listed-by-container button {
+    font-size: 1.2rem;
+  }
+  .price-history-container .flex {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  #properties-slider a.slick-arrow {
+    top: -40px;
+  }
+  #nearby-similar-homes .container:before {
+    top: 40px;
+  }
+  #contact {
+    padding: 4rem 0;
+  }
+  #contact h2 {
+    margin-bottom: 2rem;
+  }
+  #form-container {
+    padding: 1.5rem;
+  }
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    width: 200px;
+  }
+  .walk-score-container strong {
+    flex-basis: 120px;
+  }
+  .walk-score-container a {
+    font-size: 1.2rem;
+  }
+  .walk-score-container i {
+    font-size: 0.85rem;
+  }
+}
+
+/* end: media queries */
