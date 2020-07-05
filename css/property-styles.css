@@ -38,24 +38,25 @@ h1, h2, h3, h4, h5 {
 h1, h2 {
   font-family: "Playfair Display", serif;
   font-weight: 800;
+  line-height: 1.2;
 }
 
 h1 {
   font-size: 3rem;
-  line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 2.5rem;
   color: #00aeef;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-size: 1.4rem;
   font-weight: 300;
+  border-bottom: 1px solid #999;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -83,24 +84,9 @@ button.rounded {
   cursor: pointer;
 }
 
-p.large-paragraph {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
 section {
   margin-bottom: 2rem;
 }
-
-h2 {
-  margin-bottom: 3rem;
-}
-
-h3 {
-  border-bottom: 1px solid #999;
-  margin-bottom: 1rem;
-}
-
 /* end: global styles */
 
 /* start: header styles */
@@ -252,7 +238,7 @@ header ul li a:hover, header ul li a.active {
   justify-content: flex-start;
 }
 
-.actions-container>div {
+.actions-container > div {
   text-align: center;
 }
 
@@ -501,12 +487,6 @@ header ul li a:hover, header ul li a.active {
   color: #444;
 }
 
-#properties button.rounded {
-  display: block;
-  margin: 2rem auto 0;
-  width: 350px;
-}
-
 /* end: nearby similar homes styles */
 
 /* start: property details styles */
@@ -678,12 +658,9 @@ header ul li a:hover, header ul li a.active {
 }
 
 #form-container {
-  flex: 0 0 65%;
-  margin-right: 1rem;
   background: #fff;
   padding: 3rem;
   box-sizing: border-box;
-  height: 0%;
 }
 
 #form-container h3 {
@@ -715,10 +692,6 @@ header ul li a:hover, header ul li a.active {
   height: 170px;
   margin-bottom: 2rem;
   resize: none;
-}
-
-#listing-agent img {
-  width: 100%;
 }
 
 /* end: contact us styles */
@@ -956,6 +929,10 @@ footer small a:hover {
   #property-image-slider .slick-prev, #property-image-slider .slick-next {
     display: none !important;
   }
+  #property-image-slider .slick-slide img,
+  #map, #street {
+    height: 390px;
+  }
   .slider-options-container .image-fade span {
     font-size: 1rem;
   }
@@ -983,11 +960,7 @@ footer small a:hover {
     flex-basis: 100%;
     margin-right: 0;
   }
-  #contact .flex {
-    flex-wrap: wrap;
-  }
   #form-container {
-    width: 100%;
     padding: 2rem;
   }
   footer {
@@ -1016,6 +989,9 @@ footer small a:hover {
 }
 
 @media (max-width: 575px) {
+  #property-details {
+    padding-top: 1rem;
+  }
   #property-details .address-container {
     flex: 0 0 65%;
     flex-wrap: wrap;
@@ -1026,17 +1002,22 @@ footer small a:hover {
   #property-details strong {
     font-size: 1rem;
   }
+  #property-details .property-stats-container strong {
+    font-size: 0.85rem;
+  }
   #property-details .property-stats-container .padded-inner-container {
     text-align: right;
   }
-  #property-details .property-stats-container .price, #property-details .property-stats-container .sqft {
+  #property-details .property-stats-container .price,
+  #property-details .property-stats-container .sqft {
     flex: 0 0 100%;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   #property-details .property-stats-container .beds {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
-  #property-details .property-stats-container .beds .padded-inner-container, #property-details .property-stats-container .sqft .padded-inner-container {
+  #property-details .property-stats-container .beds .padded-inner-container,
+  #property-details .property-stats-container .sqft .padded-inner-container {
     border: none;
   }
   #property-details .property-stats-container .year-built {
@@ -1045,6 +1026,19 @@ footer small a:hover {
   #property-details .address-container .year-built-sm {
     flex: 0 0 100%;
     display: block;
+  }
+  #property-details .actions-container {
+    margin-top: 0;
+  }
+  #property-details .actions-container button {
+    font-size: 13px;
+  }
+  #property-details .actions-container small {
+    display: none;
+  }
+  #property-image-slider .slick-slide img,
+  #map, #street {
+    height: 330px;
   }
   .slider-options-container .image-fade span {
     bottom: 0.25rem;
@@ -1065,6 +1059,10 @@ footer small a:hover {
 }
 
 @media (max-width: 500px) {
+  #property-image-slider .slick-slide img,
+  #map, #street {
+    height: 290px;
+  }
   #properties-slider a.slick-arrow {
     top: -40px;
   }
@@ -1088,6 +1086,10 @@ footer small a:hover {
 @media (max-width: 400px) {
   nav ul {
     width: 200px;
+  }
+  #property-image-slider .slick-slide img,
+  #map, #street {
+    height: 245px;
   }
   .walk-score-container strong {
     flex-basis: 120px;
